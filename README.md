@@ -2,9 +2,9 @@
 
 See your local Claude Code and Codex activity, review sensitive commands and model-based token estimates, and request independently verified process stops.
 
-**[Download Cernite for macOS](https://github.com/BenBrostoff/cernite-downloads/releases/download/v0.3.0-alpha.2/Cernite-0.3.0-alpha.2-mac-universal.dmg)** · Free friends-and-family beta · Apple silicon and Intel · macOS 13+
+**[Download Cernite for macOS](https://github.com/BenBrostoff/cernite-downloads/releases/download/v0.3.0-alpha.3/Cernite-0.3.0-alpha.3-mac-universal.dmg)** · Free friends-and-family beta · Apple silicon and Intel · macOS 13+
 
-[Website and installation guide](https://cernite.bbrost.chatgpt.site/) · [Release notes and checksums](https://github.com/BenBrostoff/cernite-downloads/releases/tag/v0.3.0-alpha.2)
+[Website and installation guide](https://cernite.bbrost.chatgpt.site/) · [Release notes and checksums](https://github.com/BenBrostoff/cernite-downloads/releases/tag/v0.3.0-alpha.3)
 
 1. Open the downloaded DMG.
 2. Drag Cernite into Applications, then open it.
