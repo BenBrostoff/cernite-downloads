@@ -2,9 +2,9 @@
 
 See your local Claude Code and Codex activity, review sensitive commands and model-based token estimates, and request independently verified process stops.
 
-**[Download Cernite for macOS](https://github.com/BenBrostoff/cernite-downloads/releases/download/v0.3.0-alpha.7/Cernite-0.3.0-alpha.7-mac-universal.dmg)** · Free friends-and-family beta · Apple silicon and Intel · macOS 13+
+**[Download Cernite for macOS](https://github.com/BenBrostoff/cernite-downloads/releases/download/v0.3.0-alpha.8/Cernite-0.3.0-alpha.8-mac-universal.dmg)** · Free friends-and-family beta · Apple silicon and Intel · macOS 13+
 
-[Website and installation guide](https://cernite.bbrost.chatgpt.site/) · [Release log](https://cernite.bbrost.chatgpt.site/releases.html) · [Release notes and checksums](https://github.com/BenBrostoff/cernite-downloads/releases/tag/v0.3.0-alpha.7)
+[Website and installation guide](https://cernite.bbrost.chatgpt.site/) · [Release log](https://cernite.bbrost.chatgpt.site/releases.html) · [Release notes and checksums](https://github.com/BenBrostoff/cernite-downloads/releases/tag/v0.3.0-alpha.8)
 
 1. Open the downloaded DMG.
 2. Drag Cernite into Applications, then open it.
@@ -12,9 +12,9 @@ See your local Claude Code and Codex activity, review sensitive commands and mod
 
 Try demo inside the app if you do not have supported local agent sessions. Demo controls cannot stop real work. Real stops require eligible, independently verified processes and native confirmation. Cards distinguish individual stops, explicitly reviewed shared process-group stops, and observation-only sessions. An externally observed session sharing an app server cannot receive an individual process stop. The process-level Interrupt action sends SIGINT only and does not claim that a task was cancelled. Automated checks use simulated processes. A separate actual native kill-switch check froze/killed a disposable Codex server and six captured child processes, including a running harmless shell command; the OS check found zero survivors. This does not prove individual conversation cancellation or cancellation of remote model requests. See the release notes for evidence and limits.
 
-**Send a task:** click **+ New Codex prompt**, choose a project folder, type what you want done, and click **Send prompt**. Uses your installed, signed-in Codex CLI and configured model. You can send follow-ups, review permissions, read replies and **Cancel turn**, which distinguishes a cancellation request from Codex-confirmed interruption. A real disposable agent created a file, modified it after a follow-up and confirmed cancellation of a later turn.
+**SQL inside scripts:** SQL filters recognize supported multiline queries, variables and database calls in Python, including bounded local files referenced by commands. Command details and exports label current-file evidence and changes after the command. Missing files have unknown effects; static hints do not prove successful historical writes.
 
-**Continue in Cernite…** on an external Codex session creates a separately reviewed conversation with its saved history; it does not message the original agent. Prompting currently supports Codex only, not Claude Code, Muse or arbitrary external terminals. Quitting closes Cernite's input connection; use an explicit continuation after reopening. Normal account limits and charges apply.
+**Existing-session messaging remains unfinished.** Alpha.8 removes the New Codex prompt and history-fork workaround. Cernite cannot yet attach to the private input channels of existing ChatGPT/Codex sessions. Those cards show Messaging unavailable. A session on Cernite's own connection retains its original recipient ID, but that does not establish external attachment. Claude Code and Muse messaging are also unimplemented.
 
 The installed version beside Cernite opens the release log. The Git commands filter combines git and gh activity. Click an activity bar to see its matching commands, or choose exact dates and times. Clear emergency block allows new prompts and Cernite run launches again; it does not restart stopped sessions.
 
