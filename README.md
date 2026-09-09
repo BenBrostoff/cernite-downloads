@@ -2,15 +2,17 @@
 
 See your local Claude Code and Codex activity, review sensitive commands and model-based token estimates, and request independently verified process stops.
 
-**[Download Cernite for macOS](https://github.com/BenBrostoff/cernite-downloads/releases/download/v0.3.0-alpha.8/Cernite-0.3.0-alpha.8-mac-universal.dmg)** · Free friends-and-family beta · Apple silicon and Intel · macOS 13+
+**[Download Cernite for macOS](https://github.com/BenBrostoff/cernite-downloads/releases/download/v0.3.0-alpha.9/Cernite-0.3.0-alpha.9-mac-universal.dmg)** · Free friends-and-family beta · Apple silicon and Intel · macOS 13+
 
-[Website and installation guide](https://cernite.bbrost.chatgpt.site/) · [Release log](https://cernite.bbrost.chatgpt.site/releases.html) · [Release notes and checksums](https://github.com/BenBrostoff/cernite-downloads/releases/tag/v0.3.0-alpha.8)
+[Website and installation guide](https://cernite.bbrost.chatgpt.site/) · [Release log](https://cernite.bbrost.chatgpt.site/releases.html) · [Release notes and checksums](https://github.com/BenBrostoff/cernite-downloads/releases/tag/v0.3.0-alpha.9)
 
 1. Open the downloaded DMG.
 2. Drag Cernite into Applications, then open it.
 3. This beta is not Apple-notarized. If macOS blocks it because the developer cannot be verified, approve Cernite in System Settings → Privacy & Security → Open Anyway, then confirm Open. Only approve the copy you intended to test. [Apple's instructions](https://support.apple.com/en-us/102445).
 
 Try demo inside the app if you do not have supported local agent sessions. Demo controls cannot stop real work. Real stops require eligible, independently verified processes and native confirmation. Cards distinguish individual stops, explicitly reviewed shared process-group stops, and observation-only sessions. An externally observed session sharing an app server cannot receive an individual process stop. The process-level Interrupt action sends SIGINT only and does not claim that a task was cancelled. Automated checks use simulated processes. A separate actual native kill-switch check froze/killed a disposable Codex server and six captured child processes, including a running harmless shell command; the OS check found zero survivors. This does not prove individual conversation cancellation or cancellation of remote model requests. See the release notes for evidence and limits.
+
+**A denser main view:** The command timeline sits beside smaller session cards, with separate scrolling. Recent activity and its graph take less space; command context, costs, CPU graphs, filters and stop actions remain available.
 
 **SQL inside scripts:** SQL filters recognize supported multiline queries, variables and database calls in Python, including bounded local files referenced by commands. Command details and exports label current-file evidence and changes after the command. Missing files have unknown effects; static hints do not prove successful historical writes.
 
